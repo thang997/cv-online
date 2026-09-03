@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0e1116;
+  --foreground: #e6e9ef;
+  --accent: #4f8cff;
+  --accent-2: #22d3ee;
+  --muted: #8b95a7;
+  --card: #151a22;
+  --border: #232a35;
+}
+
+@theme inline {
+  --color-bg: var(--background);
+  --color-fg: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent2: var(--accent-2);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 35%, transparent);
+}
+
+/* ---------- Hiệu ứng ---------- */
+
+/* Đốm sáng nền trôi chậm */
+@keyframes float-blob {
+  0%,
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+  33%  { transform: translate3d(4vw, -3vh, 0) scale(1.12); }
+  66%  { transform: translate3d(-3vw, 4vh, 0) scale(0.92); }
+}
+
+.blob {
+  animation: float-blob 22s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Gradient chữ chạy qua lại */
+@keyframes shimmer {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.text-shimmer {
+  background: linear-gradient(
+    100deg,
+    var(--foreground) 20%,
+    var(--accent) 40%,
+    var(--accent-2) 55%,
+    var(--foreground) 75%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+/* Con trỏ nhấp nháy sau dòng role */
+@keyframes blink {
+  0%, 49%  { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.caret { animation: blink 1.1s step-end infinite; }
+
+/* Mũi tên scroll nảy nhẹ */
+@keyframes bob {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50%      { transform: translateY(6px); opacity: 1; }
+}
+
+.bob { animation: bob 2s ease-in-out infinite; }
+
+/* Đường timeline chạy sáng */
+@keyframes pulse-line {
+  0%, 100% { opacity: 0.35; }
+  50%      { opacity: 1; }
+}
+
+.pulse-line { animation: pulse-line 3s ease-in-out infinite; }
+
+/* Scroll reveal — trạng thái trước/sau khi vào viewport */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Tôn trọng thiết lập giảm chuyển động của hệ điều hành */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .blob,
+  .text-shimmer,
+  .caret,
+  .bob,
+  .pulse-line {
+    animation: none;
+  }
+
+  .text-shimmer {
+    color: var(--foreground);
+    -webkit-text-fill-color: var(--foreground);
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
