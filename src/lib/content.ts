@@ -129,6 +129,10 @@ export const EXPERIENCE: Experience[] = [
         en: "Built and maintained .NET backend services (ASP.NET Core, Minimal API, ABP Framework) serving REST APIs and realtime features over SignalR.",
       },
       {
+        vi: "Xây dựng các web quản trị (admin) cho từng hệ thống — BHXH, hóa đơn điện tử, hợp đồng điện tử, HRM — phục vụ vận hành nội bộ: cấu hình dịch vụ, phân quyền người dùng, tra cứu hồ sơ, theo dõi trạng thái xử lý và hỗ trợ khách hàng.",
+        en: "Built admin web panels for each system — BHXH, e-invoice, e-contract, HRM — for internal operations: service configuration, user permissions, record lookup, processing-status monitoring, and customer support.",
+      },
+      {
         vi: "Xây dựng luồng xử lý bất đồng bộ với RabbitMQ và background worker; tăng thông lượng bằng caching Redis và rate limiting.",
         en: "Designed asynchronous processing pipelines with RabbitMQ and background workers; improved throughput with Redis caching and rate limiting.",
       },

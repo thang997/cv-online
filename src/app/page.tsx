@@ -338,6 +338,17 @@ export default function Home() {
                       {p.code}
                     </span>
                     <h3 className="text-lg font-semibold">{t(p.name)}</h3>
+                    {p.url && (
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative ml-auto inline-flex items-center gap-1 font-mono text-xs text-[var(--muted)] transition-colors duration-200 hover:text-[var(--accent)]"
+                      >
+                        {p.url.replace(/^https?:\/\//, "")}
+                        <span aria-hidden>↗</span>
+                      </a>
+                    )}
                   </div>
 
                   <ul className="mt-4 space-y-2">

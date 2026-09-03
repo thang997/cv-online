@@ -5,6 +5,8 @@ export type Project = {
   code: string;
   name: L;
   bullets: L[];
+  /** Domain sản phẩm đang chạy. Bỏ trống thì thẻ không hiện link. */
+  url?: string;
   /** Công nghệ chính — giữ nguyên ở cả 2 ngôn ngữ. */
   tech: string[];
 };
@@ -12,6 +14,7 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     code: "BHXH",
+    url: "https://bhdt.vin-bhxh.com",
     name: {
       vi: "Hệ thống tích hợp Bảo hiểm xã hội",
       en: "Social Insurance Integration System",
@@ -46,6 +49,7 @@ export const PROJECTS: Project[] = [
   },
   {
     code: "CRM",
+    url: "https://crm.vin-ra.vn",
     name: {
       vi: "Nền tảng quản lý dịch vụ doanh nghiệp",
       en: "Enterprise Service Management Platform",
@@ -72,6 +76,7 @@ export const PROJECTS: Project[] = [
   },
   {
     code: "HĐĐT",
+    url: "https://hddt.vin-hoadon.com",
     name: {
       vi: "Hệ thống hóa đơn điện tử",
       en: "Electronic Invoice System",
@@ -110,6 +115,7 @@ export const PROJECTS: Project[] = [
   },
   {
     code: "HRM",
+    url: "https://hrm-bnn.hopdong.id.vn",
     name: {
       vi: "Hệ thống quản lý nhân sự",
       en: "Human Resource Management System",
@@ -148,6 +154,7 @@ export const PROJECTS: Project[] = [
   },
   {
     code: "HĐĐT-LĐ",
+    url: "https://admin.hopdong.id.vn",
     name: {
       vi: "Nền tảng hợp đồng điện tử",
       en: "Electronic Contract Platform",
