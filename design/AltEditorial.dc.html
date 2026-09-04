@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #7a4a24; text-decoration: none; }
+    a:hover { color: #57341a; }
+  </style>
+</helmet>
+<div style="width: 794px; height: 1123px; box-sizing: border-box; padding: 46px 56px 32px; background: #f8f6f1; color: #221f1a; font-family: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif; display: flex; flex-direction: column; gap: 20px;">
+
+  <header style="display: flex; flex-direction: column; gap: 10px;">
+    <h1 style="margin: 0; font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; font-size: 44px; font-weight: 600; letter-spacing: -0.4px; line-height: 1;">Bùi Nguyễn Thắng</h1>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-top: 1px solid #221f1a; border-bottom: 1px solid #cdc6b8; padding: 8px 0;">
+      <span style="font-size: 13.5px; font-weight: 500; letter-spacing: 0.2px;">Lập trình viên Fullstack · .NET · Làm sản phẩm</span>
+      <span style="font-size: 12px; color: #6d6558;">0343 211 997 &nbsp;·&nbsp; nguyenthang9720@gmail.com &nbsp;·&nbsp; Hà Nội</span>
+    </div>
+  </header>
+
+  <div style="display: grid; grid-template-columns: 104px 1fr; gap: 10px 22px; align-items: start;">
+
+    <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: #8a8071; padding-top: 2px;">Tóm tắt</div>
+    <p style="margin: 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; line-height: 1.5; color: #2e2a23; text-wrap: pretty;">Hơn 5 năm làm sản phẩm, mạnh nhất ở backend và hệ phân tán bằng C#/.NET, tự làm được cả giao diện với ReactJS. Không làm dự án ngắn hạn — gắn bó với cùng một sản phẩm qua nhiều phiên bản, từ phân tích nghiệp vụ đến vận hành và hỗ trợ người dùng thật. Mảng chuyên sâu: chữ ký số (PKI, HSM, PAdES) và hệ thống chịu tải cao.</p>
+
+    <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: #8a8071; padding-top: 2px;">Kinh nghiệm</div>
+    <div style="display: flex; flex-direction: column; gap: 7px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px;">
+        <div style="font-size: 14.5px;"><strong style="font-weight: 600;">Lập trình viên Fullstack</strong>, BNNSoft</div>
+        <div style="font-size: 12px; color: #6d6558; white-space: nowrap;">2020 — nay</div>
+      </div>
+      <ul style="margin: 0; padding-left: 16px; display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; line-height: 1.5; color: #3a352c;">
+        <li>Phát triển và bảo trì dịch vụ backend .NET (ASP.NET Core, Minimal API, ABP Framework) phục vụ REST API và realtime qua SignalR.</li>
+        <li>Xây dựng web quản trị cho từng hệ thống — BHXH, hóa đơn điện tử, hợp đồng điện tử, HRM — phục vụ vận hành, phân quyền và hỗ trợ khách hàng.</li>
+        <li>Xử lý bất đồng bộ với RabbitMQ và background worker; tăng thông lượng bằng caching Redis và rate limiting.</li>
+        <li>Triển khai ký số PDF và XML (PAdES) với PKI, X.509, HSM, PKCS#7 và TSA.</li>
+        <li>Vận hành hạ tầng container Docker, HAProxy/Nginx/Traefik, CI/CD Jenkins; quan trắc bằng OpenTelemetry + Grafana/Loki/Tempo.</li>
+      </ul>
+    </div>
+
+    <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: #8a8071; padding-top: 2px;">Sản phẩm</div>
+    <div style="display: flex; flex-direction: column; gap: 9px;">
+
+      <div style="display: flex; flex-direction: column; gap: 1px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;">
+          <div style="font-size: 13.5px; font-weight: 600;">Hệ thống tích hợp Bảo hiểm xã hội</div>
+          <a href="https://bhdt.vin-bhxh.com" style="font-size: 11px; white-space: nowrap;">bhdt.vin-bhxh.com</a>
+        </div>
+        <div style="font-size: 12.5px; line-height: 1.45; color: #3a352c;">Ký số XML và nộp hồ sơ điện tử lên hệ thống BHXH Việt Nam; xử lý bất đồng bộ bằng RabbitMQ và worker phân tán. <span style="color: #8a8071;">XML Signing · X.509 · RabbitMQ · Redis</span></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;">
+          <div style="font-size: 13.5px; font-weight: 600;">Nền tảng quản lý dịch vụ doanh nghiệp</div>
+          <a href="https://crm.vin-ra.vn" style="font-size: 11px; white-space: nowrap;">crm.vin-ra.vn</a>
+        </div>
+        <div style="font-size: 12.5px; line-height: 1.45; color: #3a352c;">CRM quản lý nhiều dịch vụ doanh nghiệp (BHXH, HSM, HĐĐT) cho nhiều nhà cung cấp; xác thực, phân quyền, quản lý token. <span style="color: #8a8071;">ABP Framework · ASP.NET Core · JWT · Redis</span></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;">
+          <div style="font-size: 13.5px; font-weight: 600;">Hệ thống hóa đơn điện tử</div>
+          <a href="https://hddt.vin-hoadon.com" style="font-size: 11px; white-space: nowrap;">hddt.vin-hoadon.com</a>
+        </div>
+        <div style="font-size: 12.5px; line-height: 1.45; color: #3a352c;">Phát hành hóa đơn điện tử tích hợp Tổng cục Thuế; ký số XML và PDF với PKI, HSM, PAdES và TSA. <span style="color: #8a8071;">ASP.NET Core · PKI / X.509 · PAdES / TSA</span></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;">
+          <div style="font-size: 13.5px; font-weight: 600;">Hệ thống quản lý nhân sự</div>
+          <a href="https://hrm-bnn.hopdong.id.vn" style="font-size: 11px; white-space: nowrap;">hrm-bnn.hopdong.id.vn</a>
+        </div>
+        <div style="font-size: 12.5px; line-height: 1.45; color: #3a352c;">Quản lý nhân sự, đồng bộ dữ liệu máy chấm công và in phiếu qua máy in nhiệt ESC/POS. <span style="color: #8a8071;">ASP.NET Core · MySQL · ESC/POS</span></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;">
+          <div style="font-size: 13.5px; font-weight: 600;">Nền tảng hợp đồng điện tử</div>
+          <a href="https://admin.hopdong.id.vn" style="font-size: 11px; white-space: nowrap;">admin.hopdong.id.vn</a>
+        </div>
+        <div style="font-size: 12.5px; line-height: 1.45; color: #3a352c;">Doanh nghiệp và người lao động ký trực tuyến bằng HSM, USB token và VNeID; ký XML hoặc PDF tùy định dạng file mẫu. <span style="color: #8a8071;">HSM / PKCS#11 · VNeID · PAdES / XMLDSig</span></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 1px;">
+        <div style="font-size: 13.5px; font-weight: 600;">Tích hợp chữ ký số với VNeID</div>
+        <div style="font-size: 12.5px; line-height: 1.45; color: #3a352c;">Ký số bằng chứng thư cá nhân qua VNeID và luồng xác thực an toàn cho ứng dụng doanh nghiệp. <span style="color: #8a8071;">VNeID API · X.509</span></div>
+      </div>
+
+    </div>
+
+    <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: #8a8071; padding-top: 2px;">Kỹ năng</div>
+    <div style="display: flex; flex-direction: column; gap: 5px; font-size: 12.5px; line-height: 1.45;">
+      <div><strong style="font-weight: 600;">Ký số</strong> <span style="color: #3a352c;">PKI / X.509 · RSA / SHA-256 · HSM / PKCS#7 · PKCS#11 · PAdES · XMLDSig · TSA · OpenSSL</span></div>
+      <div><strong style="font-weight: 600;">.NET</strong> <span style="color: #3a352c;">C# · .NET 8/9 · ASP.NET Core · Minimal API · ABP Framework · SignalR · Background worker</span></div>
+      <div><strong style="font-weight: 600;">Hệ phân tán</strong> <span style="color: #3a352c;">REST API · JWT · RabbitMQ · Redis · Rate limiting · Cân bằng tải · Cassandra / ScyllaDB · MySQL</span></div>
+      <div><strong style="font-weight: 600;">Hạ tầng</strong> <span style="color: #3a352c;">Docker · Jenkins · HAProxy · Nginx · Traefik · Linux · OpenTelemetry · Grafana · Loki</span></div>
+      <div><strong style="font-weight: 600;">Frontend</strong> <span style="color: #3a352c;">JavaScript · TypeScript · ReactJS · Bootstrap · Tailwind CSS · React Native</span></div>
+    </div>
+
+    <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: #8a8071; padding-top: 2px;">Cá nhân</div>
+    <div style="display: flex; flex-direction: column; gap: 3px; font-size: 12.5px; line-height: 1.45;">
+      <div><strong style="font-weight: 600;">Tính cách</strong> <span style="color: #3a352c;">Hòa đồng, dễ hợp tác · Chủ động · Cẩn thận · Ham học công nghệ mới</span></div>
+      <div><strong style="font-weight: 600;">Sở thích</strong> <span style="color: #3a352c;">Chơi game · Xem phim · Tìm hiểu công nghệ mới</span></div>
+    </div>
+
+    <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 12px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: #8a8071; padding-top: 2px;">AI</div>
+    <div style="font-size: 12.5px; line-height: 1.5; color: #3a352c;">Dùng AI hỗ trợ lập trình, AI Skills và MCP trong quy trình phát triển; vẫn tự quyết định kiến trúc và chất lượng code.</div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -271,6 +271,32 @@ export default function Home() {
               {t(CONTENT.about.body2)}
             </p>
           </Reveal>
+          <Reveal delay={180}>
+            <div className="mt-6 grid max-w-3xl gap-5 rounded-xl border border-[var(--border)] bg-[var(--card)]/40 p-5 sm:grid-cols-2">
+              {(
+                [
+                  { label: CONTENT.personal.traitsLabel, items: CONTENT.personal.traits },
+                  { label: CONTENT.personal.interestsLabel, items: CONTENT.personal.interests },
+                ] as const
+              ).map((group) => (
+                <div key={group.label.en}>
+                  <h3 className="text-xs font-medium tracking-widest text-[var(--accent)] uppercase">
+                    {t(group.label)}
+                  </h3>
+                  <ul className="mt-3 flex flex-wrap gap-2">
+                    {group.items.map((item) => (
+                      <li
+                        key={item.en}
+                        className="rounded-md border border-[var(--border)] bg-[var(--background)]/60 px-2.5 py-1 text-xs text-[var(--muted)]"
+                      >
+                        {t(item)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </Section>
 
         {/* ---- Kinh nghiệm ---- */}
@@ -502,8 +528,7 @@ export default function Home() {
       </main>
 
       <footer className="mx-auto max-w-5xl px-6 py-10 text-xs text-[var(--muted)]">
-        © {new Date().getFullYear()} {PROFILE.name} · {t(CONTENT.footer.built)}{" "}
-        Next.js + Tailwind
+        © {new Date().getFullYear()} {PROFILE.name}
       </footer>
     </div>
   );

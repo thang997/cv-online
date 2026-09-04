@@ -8,3 +8,6 @@ build/
 *.tsbuildinfo
 next-env.d.ts
 .vercel
+
+# Canvas thiết kế đã đóng gói (2.5MB) — sinh lại từ design/*.dc.html
+design/cv-*.html

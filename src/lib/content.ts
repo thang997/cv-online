@@ -96,8 +96,8 @@ export const SKILLS: SkillGroup[] = [
     ],
   },
   {
-    title: { vi: "Frontend (bổ trợ)", en: "Frontend (secondary)" },
-    items: ["JavaScript", "ReactJS", "React Native"].map(same),
+    title: { vi: "Frontend", en: "Frontend" },
+    items: ["JavaScript", "TypeScript", "ReactJS", "React Native", "Bootstrap", "Tailwind CSS"].map(same),
   },
   {
     title: { vi: "Ký số (mảng chuyên biệt)", en: "Digital Signature (niche area)" },
@@ -121,7 +121,7 @@ export type Experience = {
 export const EXPERIENCE: Experience[] = [
   {
     company: "BNNSoft",
-    role: { vi: "Lập trình viên .NET", en: ".NET Developer" },
+    role: { vi: "Lập trình viên Fullstack", en: "Fullstack Developer" },
     period: { vi: "2020 — nay", en: "2020 — Present" },
     bullets: [
       {
@@ -175,8 +175,8 @@ export const CONTENT = {
   },
   hero: {
     role: {
-      vi: "Lập trình viên Backend · .NET · Làm sản phẩm",
-      en: "Backend Developer · .NET · Product",
+      vi: "Lập trình viên Fullstack · .NET · Làm sản phẩm",
+      en: "Fullstack Developer · .NET · Product",
     },
     level: { vi: "Middle+", en: "Middle+" },
     available: {
@@ -184,8 +184,8 @@ export const CONTENT = {
       en: "Open to opportunities",
     },
     tagline: {
-      vi: "Làm sản phẩm bằng C#/.NET — backend, hệ phân tán và ký số, gắn bó với sản phẩm từ lúc phân tích đến khi chạy thật cho người dùng.",
-      en: "Building products with C#/.NET — backend, distributed systems and digital signing, owning each product from analysis through to live users.",
+      vi: "Làm sản phẩm bằng C#/.NET — mạnh nhất ở backend, hệ phân tán và ký số, tự làm được cả phần giao diện; gắn bó với sản phẩm từ lúc phân tích đến khi chạy thật cho người dùng.",
+      en: "Building products with C#/.NET — strongest on backend, distributed systems and digital signing, and comfortable on the front end too; owning each product from analysis through to live users.",
     },
     ctaContact: { vi: "Liên hệ với tôi", en: "Get in touch" },
     ctaSkills: { vi: "Xem kỹ năng", en: "View skills" },
@@ -207,8 +207,8 @@ export const CONTENT = {
   about: {
     heading: { vi: "Tóm tắt chuyên môn", en: "Professional Summary" },
     body: {
-      vi: "Lập trình viên .NET với hơn 5 năm kinh nghiệm xây dựng hệ thống backend và hệ phân tán bằng C#/.NET. Kinh nghiệm thực chiến với RESTful API, microservices, xử lý bất đồng bộ, caching, messaging, cơ sở dữ liệu NoSQL/SQL, xác thực, chữ ký số và môi trường container. Làm việc thường xuyên với RabbitMQ, Redis, Cassandra/ScyllaDB, Docker, HAProxy, Nginx, OpenTelemetry và Jenkins.",
-      en: ".NET developer with 5+ years of experience building backend and distributed systems using C#/.NET. Solid hands-on experience with RESTful APIs, microservices, asynchronous processing, caching, messaging, NoSQL/SQL databases, authentication, digital signatures, and containerized environments. Regular day-to-day work with RabbitMQ, Redis, Cassandra/ScyllaDB, Docker, HAProxy, Nginx, OpenTelemetry, and Jenkins.",
+      vi: "Lập trình viên fullstack với hơn 5 năm kinh nghiệm, trọng tâm là backend và hệ phân tán bằng C#/.NET, đồng thời tự làm được giao diện với ReactJS khi sản phẩm cần. Kinh nghiệm thực chiến với RESTful API, microservices, xử lý bất đồng bộ, caching, messaging, cơ sở dữ liệu NoSQL/SQL, xác thực, chữ ký số và môi trường container. Làm việc thường xuyên với RabbitMQ, Redis, Cassandra/ScyllaDB, Docker, HAProxy, Nginx, OpenTelemetry và Jenkins.",
+      en: "Fullstack developer with 5+ years of experience, focused on backend and distributed systems in C#/.NET while also building front ends with ReactJS when a product needs it. Solid hands-on experience with RESTful APIs, microservices, asynchronous processing, caching, messaging, NoSQL/SQL databases, authentication, digital signatures, and containerized environments. Regular day-to-day work with RabbitMQ, Redis, Cassandra/ScyllaDB, Docker, HAProxy, Nginx, OpenTelemetry, and Jenkins.",
     },
     body2: {
       vi: "Làm sản phẩm chứ không làm dự án ngắn hạn: gắn bó với cùng một sản phẩm qua nhiều phiên bản, từ phân tích nghiệp vụ, thiết kế, phát triển đến vận hành và hỗ trợ người dùng thật. Có kinh nghiệm thiết kế hệ thống hiệu năng cao, khả năng mở rộng tốt và xử lý sự cố production ở cả tầng ứng dụng, hạ tầng lẫn mạng. Hiện đang đi sâu hơn vào system design, kiến trúc, khả năng mở rộng và ra quyết định kỹ thuật.",
@@ -272,6 +272,26 @@ export const CONTENT = {
       "Automation",
     ],
   },
+  personal: {
+    heading: { vi: "Con người & sở thích", en: "Personality & Interests" },
+    sub: {
+      vi: "Vài dòng ngoài công việc.",
+      en: "A few lines outside of work.",
+    },
+    traitsLabel: { vi: "Tính cách", en: "Personality" },
+    interestsLabel: { vi: "Sở thích", en: "Interests" },
+    traits: [
+      { vi: "Hòa đồng, dễ hợp tác", en: "Easy-going, easy to work with" },
+      { vi: "Chủ động nhận việc", en: "Takes initiative" },
+      { vi: "Cẩn thận với chi tiết", en: "Careful with details" },
+      { vi: "Ham học công nghệ mới", en: "Keen on learning new tech" },
+    ],
+    interests: [
+      { vi: "Chơi game", en: "Gaming" },
+      { vi: "Xem phim", en: "Movies" },
+      { vi: "Tìm hiểu công nghệ mới", en: "Exploring new tech" },
+    ],
+  },
   contact: {
     phone: { vi: "Điện thoại", en: "Phone" },
     copied: { vi: "Đã sao chép", en: "Copied" },
@@ -284,8 +304,5 @@ export const CONTENT = {
       vi: "Chưa cấu hình thông tin liên hệ — điền vào PROFILE trong src/lib/content.ts.",
       en: "No contact details configured yet — fill in PROFILE in src/lib/content.ts.",
     },
-  },
-  footer: {
-    built: { vi: "Xây bằng", en: "Built with" },
   },
 } as const;

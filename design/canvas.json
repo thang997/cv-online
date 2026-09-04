@@ -1,0 +1,10 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 794, "h": 1123, "title": "CV — bản chính", "print": "fixed" },
+    { "file": "AltEditorial.dc.html", "x": 914, "y": 0, "w": 794, "h": 1123, "title": "Hướng editorial", "print": "fixed" }
+  ],
+  "annotations": [
+    { "id": "note-brief", "x": 0, "y": -168, "w": 520, "text": "CV một trang A4, nội dung lấy từ src/lib/content.ts và projects.ts (đã rút gọn cho vừa một trang).\n\nBản chính bám màu và chữ của web cv-online. Bản editorial bên phải là hướng thay thế — giấy ấm, chữ serif, một cột." }
+  ],
+  "launch": { "view": "canvas" }
+}

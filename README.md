@@ -1,6 +1,6 @@
 # cv-online
 
-CV / landing page cá nhân song ngữ (Việt – Anh) của **Bùi Nguyễn Thắng** — Backend / .NET Developer.
+CV / landing page cá nhân song ngữ (Việt – Anh) của **Bùi Nguyễn Thắng** — Fullstack / .NET Developer.
 
 Xây bằng **Next.js 16 (App Router) + TypeScript + Tailwind CSS v4**, có scene 3D bằng React Three Fiber ở phần hero.
 
